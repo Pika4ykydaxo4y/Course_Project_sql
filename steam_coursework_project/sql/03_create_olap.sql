@@ -1,0 +1,14 @@
+DROP SCHEMA IF EXISTS steam_dwh CASCADE;
+CREATE SCHEMA steam_dwh;
+SET search_path TO steam_dwh;
+CREATE TABLE dim_date (date_key INT PRIMARY KEY, full_date DATE UNIQUE NOT NULL, day INT NOT NULL, month INT NOT NULL, month_name VARCHAR(20) NOT NULL, quarter INT NOT NULL, year INT NOT NULL);
+CREATE TABLE dim_country (country_key SERIAL PRIMARY KEY, country_code CHAR(2) UNIQUE NOT NULL, country_name VARCHAR(100) NOT NULL, region VARCHAR(100) NOT NULL);
+CREATE TABLE dim_user (user_key SERIAL PRIMARY KEY, username VARCHAR(50) UNIQUE NOT NULL, country_key INT REFERENCES dim_country(country_key), registration_date DATE NOT NULL);
+CREATE TABLE dim_publisher (publisher_key SERIAL PRIMARY KEY, publisher_name VARCHAR(120) UNIQUE NOT NULL, country_key INT REFERENCES dim_country(country_key));
+CREATE TABLE dim_developer (developer_key SERIAL PRIMARY KEY, developer_name VARCHAR(120) UNIQUE NOT NULL, country_key INT REFERENCES dim_country(country_key));
+CREATE TABLE dim_game (game_key SERIAL PRIMARY KEY, game_slug VARCHAR(120) UNIQUE NOT NULL, title VARCHAR(160) NOT NULL, release_year INT NOT NULL, developer_key INT REFERENCES dim_developer(developer_key), publisher_key INT REFERENCES dim_publisher(publisher_key));
+CREATE TABLE dim_genre (genre_key SERIAL PRIMARY KEY, genre_name VARCHAR(80) UNIQUE NOT NULL);
+CREATE TABLE bridge_game_genre (game_key INT REFERENCES dim_game(game_key), genre_key INT REFERENCES dim_genre(genre_key), weight NUMERIC(5,4) NOT NULL, PRIMARY KEY (game_key, genre_key));
+CREATE TABLE dim_game_price_scd (game_price_key SERIAL PRIMARY KEY, game_key INT NOT NULL REFERENCES dim_game(game_key), price NUMERIC(10,2) NOT NULL, currency CHAR(3) NOT NULL, valid_from DATE NOT NULL, valid_to DATE, is_current BOOLEAN NOT NULL, UNIQUE(game_key, valid_from));
+CREATE TABLE fact_sales (sales_key SERIAL PRIMARY KEY, purchase_code VARCHAR(30) UNIQUE NOT NULL, date_key INT NOT NULL REFERENCES dim_date(date_key), user_key INT NOT NULL REFERENCES dim_user(user_key), game_key INT NOT NULL REFERENCES dim_game(game_key), game_price_key INT REFERENCES dim_game_price_scd(game_price_key), units_sold INT NOT NULL DEFAULT 1, gross_revenue NUMERIC(12,2) NOT NULL, discount_amount NUMERIC(12,2) NOT NULL, net_revenue NUMERIC(12,2) NOT NULL);
+CREATE TABLE fact_user_activity (activity_key SERIAL PRIMARY KEY, date_key INT NOT NULL REFERENCES dim_date(date_key), user_key INT NOT NULL REFERENCES dim_user(user_key), game_key INT NOT NULL REFERENCES dim_game(game_key), reviews_count INT NOT NULL DEFAULT 0, achievements_count INT NOT NULL DEFAULT 0, avg_rating NUMERIC(4,2), UNIQUE(date_key, user_key, game_key));

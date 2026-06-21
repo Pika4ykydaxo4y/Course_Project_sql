@@ -1,0 +1,98 @@
+review_code,username,game_slug,review_date,rating,comment
+R00001,user057,dota-2,2025-11-19,4,Good value
+R00002,user017,hades,2025-09-10,5,Fun with friends
+R00004,user033,deep-rock-galactic,2025-04-04,2,Fun with friends
+R00005,user039,baldurs-gate-3,2026-01-30,3,Not my type
+R00006,user056,counter-strike-2,2025-04-28,3,Needs updates
+R00011,user059,counter-strike-2,2025-11-28,3,Needs updates
+R00014,user035,hades,2025-05-12,3,Not my type
+R00017,user029,no-mans-sky,2026-04-08,1,Not my type
+R00019,user015,baldurs-gate-3,2025-02-02,3,Fun with friends
+R00021,user031,stardew-valley,2026-04-30,4,Needs updates
+R00024,user007,stardew-valley,2025-07-16,2,Needs updates
+R00027,user055,stardew-valley,2025-06-20,4,Great game
+R00030,user036,portal-2,2026-05-14,1,Not my type
+R00031,user048,no-mans-sky,2025-03-04,4,Not my type
+R00032,user059,no-mans-sky,2025-06-11,2,Great game
+R00036,user016,terraria,2026-02-10,3,Great game
+R00037,user001,deep-rock-galactic,2025-04-13,2,Needs updates
+R00038,user057,baldurs-gate-3,2025-09-08,5,Needs updates
+R00039,user040,portal-2,2025-01-09,1,Good value
+R00040,user017,baldurs-gate-3,2025-04-20,5,Good value
+R00041,user046,rust,2025-07-28,4,Needs updates
+R00045,user008,baldurs-gate-3,2025-06-02,5,Good value
+R00047,user056,counter-strike-2,2026-01-02,1,Needs updates
+R00052,user030,rust,2025-11-09,1,Good value
+R00054,user023,portal-2,2026-02-14,1,Great game
+R00055,user057,terraria,2025-07-02,1,Not my type
+R00056,user028,rust,2025-11-18,4,Not my type
+R00057,user013,terraria,2025-02-15,5,Good value
+R00059,user043,baldurs-gate-3,2025-11-04,4,Needs updates
+R00060,user036,hades,2025-07-16,2,Not my type
+R00061,user037,terraria,2026-02-20,2,Fun with friends
+R00063,user033,deep-rock-galactic,2025-06-23,5,Needs updates
+R00064,user006,stardew-valley,2025-11-14,1,Good value
+R00066,user013,dota-2,2026-01-29,1,Great game
+R00068,user030,counter-strike-2,2025-09-13,2,Fun with friends
+R00070,user047,no-mans-sky,2026-03-13,2,Fun with friends
+R00073,user016,terraria,2025-12-10,2,Good value
+R00074,user025,dota-2,2025-06-06,4,Needs updates
+R00075,user035,deep-rock-galactic,2026-03-02,5,Great game
+R00076,user055,the-witcher-3,2026-01-25,4,Fun with friends
+R00077,user035,dota-2,2025-08-14,4,Great game
+R00078,user025,rust,2026-02-19,2,Not my type
+R00080,user006,portal-2,2026-03-15,3,Fun with friends
+R00082,user018,phasmophobia,2025-09-16,5,Great game
+R00083,user023,stardew-valley,2025-03-12,1,Good value
+R00084,user013,counter-strike-2,2025-06-06,1,Not my type
+R00086,user048,dota-2,2025-04-28,3,Great game
+R00092,user007,phasmophobia,2026-01-06,2,Fun with friends
+R00095,user021,stardew-valley,2025-03-30,4,Not my type
+R00097,user012,deep-rock-galactic,2025-08-06,5,Needs updates
+R00100,user029,counter-strike-2,2025-04-06,2,Needs updates
+R00101,user043,the-witcher-3,2026-01-13,5,Needs updates
+R00102,user023,dota-2,2026-04-10,1,Good value
+R00103,user021,baldurs-gate-3,2025-07-09,5,Not my type
+R00104,user039,terraria,2025-04-13,2,Needs updates
+R00106,user036,terraria,2025-05-10,1,Not my type
+R00108,user017,deep-rock-galactic,2025-04-27,5,Great game
+R00109,user010,hades,2025-11-08,4,Not my type
+R00110,user039,the-witcher-3,2025-08-20,4,Needs updates
+R00111,user056,the-witcher-3,2026-03-16,1,Good value
+R00112,user041,stardew-valley,2025-09-28,5,Great game
+R00114,user019,counter-strike-2,2025-08-26,4,Great game
+R00118,user039,dota-2,2025-10-23,3,Fun with friends
+R00119,user018,no-mans-sky,2026-05-21,4,Needs updates
+R00121,user056,the-witcher-3,2025-01-22,1,Good value
+R00123,user041,deep-rock-galactic,2025-04-04,1,Good value
+R00124,user022,phasmophobia,2026-05-23,5,Great game
+R00126,user026,no-mans-sky,2025-01-02,1,Good value
+R00127,user034,rust,2026-05-26,3,Not my type
+R00128,user009,terraria,2026-03-25,5,Good value
+R00129,user046,hades,2025-11-15,2,Great game
+R00130,user030,baldurs-gate-3,2025-06-07,3,Fun with friends
+R00131,user054,deep-rock-galactic,2026-04-29,2,Not my type
+R00132,user033,dota-2,2025-05-20,4,Needs updates
+R00134,user054,the-witcher-3,2026-05-17,3,Needs updates
+R00136,user045,stardew-valley,2026-01-28,3,Fun with friends
+R00139,user056,baldurs-gate-3,2026-03-27,2,Fun with friends
+R00141,user022,the-witcher-3,2026-02-12,5,Fun with friends
+R00143,user016,portal-2,2025-10-22,1,Great game
+R00145,user019,rust,2026-01-19,5,Good value
+R00147,user016,deep-rock-galactic,2025-05-27,3,Great game
+R00148,user058,deep-rock-galactic,2025-10-22,3,Not my type
+R00153,user054,terraria,2025-08-24,2,Not my type
+R00156,user006,terraria,2025-12-01,5,Needs updates
+R00159,user010,stardew-valley,2026-02-11,4,Great game
+R00161,user017,the-witcher-3,2026-01-26,2,Fun with friends
+R00162,user002,the-witcher-3,2025-12-02,4,Needs updates
+R00163,user042,phasmophobia,2025-04-30,4,Great game
+R00166,user057,phasmophobia,2025-04-12,3,Great game
+R00167,user045,rust,2025-08-11,3,Great game
+R00168,user044,rust,2026-01-03,1,Fun with friends
+R00170,user004,rust,2025-09-07,5,Good value
+R00172,user039,counter-strike-2,2025-10-11,2,Not my type
+R00173,user017,hades,2025-04-23,3,Good value
+R00174,user038,rust,2025-01-17,4,Not my type
+R00178,user004,deep-rock-galactic,2026-02-16,4,Great game
+R00179,user058,baldurs-gate-3,2025-11-26,5,Not my type
